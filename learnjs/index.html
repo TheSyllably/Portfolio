@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script> 
+    $(function() {
+        $('.open-popup').on('click', function() {
+            $('.popup-container').css('display', 'flex');
+        });
+
+        $('.close-button').on('click', function() {
+            $('.popup-container').css('display', 'none');
+        });
+        $('.light-button').on('click', function() {
+            $('.popup-container').css('display', 'none');
+        });
+        $('.send-button').on('click', function() {
+               let name = $('input[name="name"]').val();
+               let request = {
+                'name': name,
+               };
+               $.post('api.php', request, function(response){ 
+if (respone =='1') {
+    $('input[name="name"]').val('');
+    $('popup-container').css('display','none');
+} else { 
+    alert('Something go wrong');
+}
+               });
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="popup-container">
+        <div class="popup"> 
+            <a href="#" class="close-button"></a>
+        <h2> Hello! It`s nice to meet you! How is your name?</h2>
+        <input type="text" name="name" placeholder="Your Name"> Write your name </input>
+        <button class="light-button send-button "> <a href="#"> OK </a></button>
+        </div>
+    </div>
+    <header class="fixed-container">  
+        <nav> 
+            <a href ="#"> Links</a>
+            <a href ="#"> Biography</a>
+            <a href ="#"> Porfolio</a>
+        </nav>
+         <div> 
+            Hello
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           <button class="call-button open-popup"> <a href="#"> Call </a></button>
+         </div>
+        </header>
+<section class="fixed-container first-class"> 
+    &nbsp;
+    &nbsp;
+     <h1> <a href="@">Eugenio Maksimov </a></h1>
+     <div> frontend-developer and web-master
+        <p> <button class="info-button"><a href="#">More info </a></button> </button></p>
+     </div>
+     </section>
+<section class="fixed-container second-class"> 
+    <h2> <a href="">What Do I Do? </a></h2>
+    <div class="services-container"> 
+       <div class="service-1"> Eat ramens</div>
+       <div class="service-2"> Eat hamburgers</div>
+       <div class="service-3"> Eat donuts</div>
+       <div class="service-4"> Drink Coffee</div>
+    </div>
+</section>
+<section class="fixed-container pf-block"> 
+    <h2> <a href=""> Our services </a></h2>
+    <div class="bk-cont">
+        <div class="bk-1"> Make a site, where you can sell ramens</div>
+        <div class="block-2"> Make a site, where you can sell your pizzas</div>
+        <div class="block-3"> Make a site, where you can sell your donuts</div>
+    </div>
+</section>
+<section class="bcont"> 
+    <h2> And also I like to eat sweaties! </h2>
+    <div class="some-block"> 
+         So, if you want to choose me - just call and send me a pizza or KFC and I`ll do my work
+        <div class="fastfood"> 
+            <div class="KFC"> KFC</div>
+            <div class="MC">  MC</div>
+            <div class="BK"> BK </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

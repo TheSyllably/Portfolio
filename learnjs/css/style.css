@@ -1,0 +1,224 @@
+* {
+    font-family: Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 1000px; 
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fixed-container {
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 840px;
+    margin-right: auto;
+    margin-left: auto;
+}  a {
+    margin-right: 20px;
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    transition: .5s;
+}
+nav a:hover {
+    background-color: rgb(84, 30, 30);
+    color: white;
+}
+.call-button {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    color: white;
+}
+.first-class {
+    height: 500px;
+    background-image: url(../img/coffee.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-button { 
+ background-color: rgb(84, 30, 30);
+ border: 1px solid rgb(84, 30, 30);
+ border-radius: 10px;
+ padding-top: 10px;
+ padding-right: 40px;
+ padding-left: 40px;
+ padding-bottom: 10px;
+ color: white;
+}
+.info-button a {
+    color: white;
+}
+.info-button a:hover {
+    text-decoration: underline;
+    font-size: 120%;
+}
+.first-class h1 {
+    font-size: 24px;
+}
+.first-class h1 a:hover {
+    text-decoration: underline;
+}
+
+.second-class h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.second-class h2 a:hover {
+    text-decoration: underline;
+    background-color: rgb(84, 30, 30);
+    transition: .5s;
+    color: white;
+}
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.services-container > div {
+    padding-top: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+.service-1 { 
+    background-image: url(../img/ramen.gif);
+}
+.service-2 {
+    background-image: url(../img/pizza2min.gif);
+    background-position: center;
+}
+.service-3 { 
+    background-image: url(../img/donuts.gif);
+}
+.service-4 { 
+    background-image: url(../img/coffee.gif);
+}
+
+.pf-block h2 {
+    display: flex;
+    justify-content: center;
+}
+.bk-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.bk-cont > div {
+    padding-top: 110px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+.bk-1 {
+    background-image: url(../img/ramen.gif);
+}
+.block-2 {
+    background-image: url(../img/pizza2.gif);
+}
+.block-3 { 
+    background-image: url(../img/donuts.gif);
+}
+.popup-container {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ba;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 200px;
+    position: relative;
+}
+.popup h2 {
+    margin-top: 0px;
+
+}
+.popup input {
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.popup button {
+    margin-top: 10px;
+display: block;
+border-radius: 10px;
+background-color: white;
+padding: 10px;
+align-items: center;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 5px;
+    height: 2px;
+    background-image: url(../img/close.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.close-button a:hover {
+    background-size: 90%;
+}
+.bcont {
+    height: 200px;
+    margin-top: 30px;
+    background-color:rgb(84, 30, 30);
+}
+.bcont h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.some-block {
+        padding-left: 80px;
+        padding-right: 80px;
+        width: 840px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+.fastfood {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.fastfood > div {
+    padding-top: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
